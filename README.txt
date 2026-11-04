@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Resources | FELICIA WEALTH Book Marketing</title><meta name="description" content="Practical insights for authors on Amazon, Goodreads, launches, branding, reader growth and advertising.">
+<link rel="icon" href="images/brandlogo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add("js")</script><link rel="stylesheet" href="style.css"></head><body><header class="nav"><div class="wrap">
+<a class="brand" href="index.html"><img src="images/brandlogo.png" alt=""><span>FELICIA WEALTH</span></a>
+<button class="burger" aria-label="Menu"><i></i><i></i><i></i></button>
+<nav class="menu"><a class="lnk" href="index.html">Home</a><a class="lnk" href="about.html">About</a><a class="lnk" href="services.html">Services</a><a class="lnk" href="framework.html">Framework</a><a class="lnk" href="case-studies.html">Results</a><a class="lnk active" href="resources.html">Resources</a>
+<div class="ctas"><a class="btn btn-line btn-sm" href="free-audit.html">Free Amazon Audit</a><a class="btn btn-gold btn-sm" href="apply.html">Apply to Work With Me</a></div></nav></div></header><section class="hero page-hero single"><span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span><div class="wrap"><div class="grid"><div><span class="eyebrow">Resources</span><h1 class="rv">Practical Insights <em>for Authors</em></h1><p class="lead rv d1">Strategies, ideas, and guidance for making books more discoverable.</p></div></div></div></section><section class="sec-ivory"><div class="wrap"><div class="sec-head rv"><span class="eyebrow">Categories</span><h2>Browse by Topic</h2></div><div class="grid-3"><div class="card c-gold rv d1"><span class="num">01</span><h3>Amazon</h3><p>Your title, subtitle and description should echo the words your reader searches. Start by writing down the phrases a stranger would type to find a book like yours.</p></div><div class="card c-teal rv d2"><span class="num">02</span><h3>Goodreads</h3><p>Complete your author profile, claim your books and take part in genre conversations. Authentic presence is slow to build and long lasting.</p></div><div class="card c-wine rv d3"><span class="num">03</span><h3>Book Marketing</h3><p>Choose one or two channels and do them well. A focused plan outperforms scattered effort.</p></div><div class="card c-blue rv d1"><span class="num">04</span><h3>Book Launches</h3><p>Build your early reader list and ARC team before release day, not after.</p></div><div class="card c-gold rv d2"><span class="num">05</span><h3>Author Branding</h3><p>Keep your name, tone, imagery and promise consistent across every platform.</p></div><div class="card c-teal rv d3"><span class="num">06</span><h3>Reader Growth</h3><p>Give readers a clear next step: the next book, a newsletter, a community.</p></div><div class="card c-wine rv d1"><span class="num">07</span><h3>Advertising</h3><p>Test small, read the data, and scale only what shows signs of working.</p></div></div></div></section>
+<section class="sec-wine"><div class="wrap center"><h2 class="rv">Need help applying this to your book?</h2><div class="btn-row rv d1"><a class="btn btn-gold" href="apply.html">Apply to Work With Me</a></div></div></section><footer><div class="wrap"><div class="cols">
+<div><a class="brand" href="index.html"><img src="images/brandlogo.png" alt=""><span>FELICIA WEALTH</span></a><p>Strategic book marketing for authors who want their books discovered, read and remembered.</p></div>
+<div><h4>Explore</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="framework.html">Framework</a></li><li><a href="case-studies.html">Results</a></li><li><a href="resources.html">Resources</a></li><li><a href="testimonials.html">Testimonials</a></li></ul></div>
+<div><h4>Services</h4><ul><li><a href="amazon-discovery.html">Amazon Discovery</a></li><li><a href="book-launch.html">Book Launch</a></li><li><a href="reader-discovery.html">Reader Discovery</a></li><li><a href="author-growth.html">Author Growth</a></li></ul></div>
+<div><h4>Get in Touch</h4><ul><li><a href="free-audit.html">Free Amazon Book Audit</a></li><li><a href="apply.html">Apply to Work With Me</a></li><li><a href="contact.html">Contact</a></li><li><a href="mailto:feliciawealth02@gmail.com">feliciawealth02@gmail.com</a></li></ul></div>
+</div></div><div class="copy">&copy; 2026 FELICIA WEALTH Book Marketing. All rights reserved.</div></footer>
+<script>(function(){
+  var burger=document.querySelector('.burger'),menu=document.querySelector('.menu');
+  if(burger){burger.addEventListener('click',function(){burger.classList.toggle('open');menu.classList.toggle('open');});}
+
+  var els=document.querySelectorAll('.rv');
+  setTimeout(function(){els.forEach(function(el){el.classList.add('in');});},2500);
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
+    els.forEach(function(el){io.observe(el);});
+  }else{els.forEach(function(el){el.classList.add('in');});}
+
+  var counters=document.querySelectorAll('[data-count]');
+  var co=new IntersectionObserver(function(en){en.forEach(function(e){
+    if(!e.isIntersecting)return;co.unobserve(e.target);
+    var el=e.target,end=parseInt(el.dataset.count,10),t0=null,suf=el.dataset.suffix||'';
+    function tick(t){if(!t0)t0=t;var p=Math.min((t-t0)/1600,1);el.textContent=Math.floor(end*(1-Math.pow(1-p,3)))+suf;if(p<1)requestAnimationFrame(tick);}
+    requestAnimationFrame(tick);
+  });},{threshold:.5});
+  counters.forEach(function(c){co.observe(c);});
+
+  /* multi step apply form */
+  var steps=document.querySelectorAll('.step');
+  if(steps.length){
+    var idx=0,bars=document.querySelectorAll('.progress i');
+    var show=function(i){steps.forEach(function(s,n){s.classList.toggle('show',n===i);});bars.forEach(function(b,n){b.classList.toggle('on',n<=i);});
+      var top=document.querySelector('.form-card');if(top)window.scrollTo({top:top.offsetTop+60,behavior:'smooth'});};
+    document.querySelectorAll('[data-next]').forEach(function(b){b.addEventListener('click',function(){
+      var ok=true;steps[idx].querySelectorAll('input,select,textarea').forEach(function(f){if(!f.checkValidity()){f.reportValidity();ok=false;}});
+      if(ok&&idx<steps.length-1){idx++;show(idx);}});});
+    document.querySelectorAll('[data-prev]').forEach(function(b){b.addEventListener('click',function(){if(idx>0){idx--;show(idx);}});});
+    show(0);
+  }
+
+  /* formspree ajax */
+  document.querySelectorAll('form[data-formspree]').forEach(function(form){
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      var btn=form.querySelector('[type=submit]'),err=form.parentNode.querySelector('.err'),orig=btn.textContent;
+      btn.disabled=true;btn.textContent='Sending...';if(err)err.style.display='none';
+      fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}})
+      .then(function(r){
+        if(r.ok){form.style.display='none';var p=form.parentNode;var pr=p.querySelector('.progress');if(pr)pr.style.display='none';
+          var t=p.querySelector('.thanks');if(t)t.style.display='block';t&&t.scrollIntoView({behavior:'smooth',block:'center'});}
+        else{throw new Error('fail');}
+      }).catch(function(){btn.disabled=false;btn.textContent=orig;if(err)err.style.display='block';});
+    });
+  });
+})();
+</script></body></html>
